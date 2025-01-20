@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="website icon" type="png" href="OCLogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Records Management System</title>
+</head>
+<style>
+
+    html ::-webkit-scrollbar {
+    display: none;
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Techno Board", Courier;
+    }
+
+    body {
+        background-image: url(image/occs2.png);
+        background-color: #187a18;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+
+
+    .wrapper {
+        width: 600px;
+        height: 450px;
+        transform: translateY(210px);
+        margin-left: 550px;
+        padding: 30px 20px 20px 20px;
+        border: 2px solid rgb(230, 230, 230);
+        background-color: #0f170d;
+        border-radius: 15px;
+        box-shadow: 12px 12px 17px #005500,
+        -12px -12px 17px #005500;
+    }
+
+    .logo {
+        width: 90px;
+        margin: auto;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        filter: drop-shadow(5px 5px 15px #005500);
+    }
+
+    .wrapper .name {
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        color: white;
+    }
+
+    .wrapper .form-field input {
+        width: 100%;
+        height: 35px;
+        display: block;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 1.2rem;
+        color: rgb(163, 255, 255);
+        padding: 10px 15px 10px 10px;
+        
+    }
+
+    .wrapper .form-field {
+        padding-left: 10px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-color: #005500;
+        border: 2px solid #54c242;
+        box-shadow: 2px 2px 2px #54c242,
+        -2px -2px 2px #fff;
+    }
+    ::placeholder {
+    color: rgb(201, 201, 201);
+    }
+
+    .wrapper .form-field .fas {
+        color: #23c5c5;
+    }
+
+
+    .wrapper .btn {
+        box-shadow: none;
+        width: 100%;
+        height: 35px;
+        background-color: #005500;
+        color: #fff;
+        border-radius: 25px;
+        box-shadow: 2px 2px 2px #b1b1b1,
+        -2px -2px 2px #fff;
+        letter-spacing: 1.3px;
+    }
+
+    .wrapper .btn:hover {
+        background-color: #54c242;
+    }
+
+    .wrapper a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color:  #10c7c7;
+    }
+
+
+h1 {
+text-align: center;
+}   
+h2,h3 {
+    color: white;
+    transform: translateY(20px);
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+            
+</style>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="OCLogo.png" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+            <h1>Log In</h1>
+        </div>
+        <form action="auth.php" method="post" class="form-login">
+          <div class="form-field d-flex align-items-center">                 
+                <input name="username" type="text" name="userName" id="userName" placeholder="Username" required>
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <input name="password" type="Password" name="Password" id="pwd" placeholder="Password" required>
+            </div>
+            <button name="login" type="Submit" class="btn mt-3">Login</button>
+        </form>
+      
+        <div class="power">
+            <h2>Powered by: GROUP 2</h2>
+            <h3>OC-IT325A Series 2024</h3>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
